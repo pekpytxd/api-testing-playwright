@@ -9,6 +9,11 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.42.1",
-    "@types/node": "^20.11.28"
+    "@types/node": "^20.11.28",
+    "eslint-plugin-playwright": "^1.5.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "moment": "^2.30.1"
   }
 }
