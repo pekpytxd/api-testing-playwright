@@ -1,4 +1,7 @@
 export enum Paths {
 
-    APOD = 'apod'
+    USERS = 'api/users',
+    LOGIN = 'api/login',
+    REGISTER = 'api/register',
+
 }

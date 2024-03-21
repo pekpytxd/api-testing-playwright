@@ -10,6 +10,6 @@ export default defineConfig({
     workers: process.env.CI ? 1 : undefined,
     reporter: [['html', {open: 'never'}]],
     use: {
-        baseURL: 'https://api.nasa.gov'
+        baseURL: 'https://reqres.in/'
     }
 });
