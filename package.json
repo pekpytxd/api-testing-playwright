@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:debug": "npx playwright test tests/auth-services/login-service.test.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

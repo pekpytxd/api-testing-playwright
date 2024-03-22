@@ -1,6 +1,6 @@
 import {expect, test} from "@playwright/test";
-import {Paths} from "../enums/paths.enum";
-import {stringToJSON} from "../helpers";
+import {Paths} from "../../enums/paths.enum";
+import {responseToJSON} from "../../helpers";
 
 test.describe('Authorization service -', () => {
 
@@ -29,7 +29,7 @@ test.describe('Authorization service -', () => {
                 "password": "pistol"
             },
         });
-        const responseBody = await stringToJSON(response)
+        const responseBody = await responseToJSON(response)
         expect(response.status()).toBe(200);
         expect(responseBody.id).toBeTruthy();
         expect(responseBody.token).toBeTruthy();
@@ -40,7 +40,7 @@ test.describe('Authorization service -', () => {
             const response = await request.post(Paths.REGISTER, {
                 data: fieldAndValue
             });
-            const responseBody = await stringToJSON(response)
+            const responseBody = await responseToJSON(response)
             expect(response.status()).toBe(400);
             expect(responseBody.error).toBe(errorMessage);
         });
