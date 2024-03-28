@@ -26,6 +26,6 @@ test.describe('GET ', async () => {
     test('not existent user', async ({request}) => {
         const response = await request.get(`${Paths.USERS}/23`)
         const responseBody = await responseToJSON(response)
-        expect(response.status()).toBe(401)
+        expect(response.status()).toBe(404)
     })
 })
