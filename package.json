@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:debug": "npx playwright test tests/auth-services/login-service.test.ts"
+    "test:debug": "npx playwright test tests/user-service/edit-user.test.ts"
   },
   "keywords": [],
   "author": "",
