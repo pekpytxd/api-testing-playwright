@@ -8,7 +8,7 @@ export default defineConfig({
     fullyParallel: true,
     retries: process.env.CI ? 1 : 0,
     workers: process.env.CI ? 1 : undefined,
-    reporter: [['html', {open: 'never'}]],
+    reporter: [['junit', { outputFile: 'test-results/results.xml' }]],
     use: {
         baseURL: 'https://reqres.in/'
     }
